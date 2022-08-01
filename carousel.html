@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>CAROUSEL</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: black;
+        width: 800px;
+        margin: 100px auto;
+      }
+
+      .carousel {
+        width: 800px;
+        background-color: #087f5b;
+        color: white;
+        border-radius: 8px;
+        padding: 32px;
+        padding-left: 86px;
+        position: relative;
+
+        /*grid*/
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+      .btn {
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+      }
+      .cus .chevron {
+        width: 24px;
+        height: 24px;
+        stroke: black;
+        background-color: white;
+        border-radius: 50%;
+      }
+      tomer-image {
+        height: 200px;
+        width: 200px;
+        transform: scale(1.5);
+      }
+
+      .testimonial-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+
+      .author-name {
+        font-size: 14px;
+        color: #c3fae8;
+      }
+
+      .author-job {
+        font-size: 12px;
+        color: #c3fae8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="chevron left"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+      <img
+        src="img/testimonial-girl.png"
+        alt="customer feedback"
+        class="customer-image"
+      />
+      <blockquote class="testimonial-box">
+        <p class="testimonial-text">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          reprehenderit fugiat doloremque iure cum eius natus id nihil facilis
+          enim, vel aliquid voluptas veniam officia animi iste accusantium sit
+          praesentium"
+        </p>
+        <p class="author-name">By Jenny Williams</p>
+        <p class="author-job">Head of Hotel and Chain</p>
+      </blockquote>
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="chevron right"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>

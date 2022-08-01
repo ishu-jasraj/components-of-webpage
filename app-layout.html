@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APP-LAYOUT</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        color: #434343;
+
+        text-align: center;
+        font-weight: bold;
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 80px 400px 1fr 150px;
+        grid-template-rows: 80px 1fr;
+      }
+      nav {
+        background-color: #434343;
+        color: white;
+        grid-row: 1/-1;
+        padding-top: 20px;
+      }
+      menu {
+        background-color: #7950f2;
+
+        grid-column: 2/-1;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+      button {
+        padding: 6px 12px;
+        background-color: #6741d9;
+        font-weight: bold;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-left: 20px;
+      }
+
+      button:last-child {
+        background-color: #d6336c;
+        margin-left: auto;
+        margin-right: 20px;
+      }
+      section {
+        background-color: #dee2e6;
+        padding-top: 20px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        overflow: scroll;
+      }
+      div {
+        background-color: #ced4da;
+        padding: 30px;
+        width: 80%;
+        margin: 0 auto;
+      }
+      main {
+        padding-top: 20px;
+      }
+      aside {
+        background-color: #dee2e6;
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>NAV</nav>
+    <menu>
+      <button>New</button>
+      <button>Reply</button>
+      <button>Forward</button>
+      <button>Mark Unread</button>
+      <button>Trash</button>
+    </menu>
+    <section>
+      <div>Email 1</div>
+      <div>Email 2</div>
+      <div>Email 3</div>
+      <div>Email 4</div>
+      <div>Email 5</div>
+      <div>Email 6</div>
+      <div>Email 7</div>
+      <div>Email 8</div>
+      <div>Email 9</div>
+      <div>Email 10</div>
+    </section>
+    <main>EMAIL VIEW</main>
+    <aside>ADDITIONAL INFO</aside>
+  </body>
+</html>

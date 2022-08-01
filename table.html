@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>TABLE</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: black;
+        width: 800px;
+        margin: 0 auto;
+      }
+
+      table{
+        width:700px;
+        margin-top:100px;
+        /* border:1px solid grey; */
+        border-collapse: collapse;
+        
+        
+      }
+      /* tr{
+        border:1px solid grey;
+      } */
+      th,td
+       {
+        /* border:1px solid grey; */
+        padding:16px 24px;
+        text-align: left;
+       }
+       thead th
+       {
+       color:white;
+        background-color: #087f5b;
+         width:25%;
+        }
+
+        tbody tr:nth-child(odd)
+         {
+          background-color:#e9ecef;
+         }
+
+         tr:nth-child(even)
+          {
+            background-color:#ced4da;
+          }
+
+    </style>
+  </head>
+  <body>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Chair</th>
+            <th>The Laid Back</th>
+            <th>The Worker Bee</th>
+            <th>The Chair 4/2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Width</td>
+            <td>80cm</td>
+            <td>60cm</td>
+            <td>240cm</td>
+          </tr>
+          <tr>
+            <th>Height</td>
+            <td>88cm</td>
+            <td>62cm</td>
+            <td>26cm</td>
+          </tr>
+          <tr>
+            <th>Depth</td>
+            <td>80cm</td>
+            <td>60cm</td>
+            <td>278cm</td>
+          </tr>
+          <tr>
+            <th>Weight</th>
+            <td>60kg</td>
+            <td>60kg</td>
+            <td>57kg</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
